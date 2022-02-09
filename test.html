@@ -7,8 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" /> -->
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 
     <title>Bidders Choice Auctions</title>
 
@@ -34,13 +39,19 @@
                         <div class="card">
                             <div class="card-body">
                                 <h3>Lot 1</h3>
-                                <img src="/pics/BobcatS650SkidSteer.jpg" class="card-img" alt="Bobcat S650 Skid Steer">
-                                <h4>Manufacturer: Bobcat</h4>
+                                <div class="square border border-primary">
+                                    <div class="squareContent">
+                                        <img src="/pics/BobcatS650SkidSteer.jpg" class="squareContent " alt="Bobcat S650 Skid Steer" id="lotOneImg">
+                                    </div>
+                                </div>
+                                <h4 id="loiwt">width</h4>
+                                <h4 id="loiht">height</h4>
+                                <!-- <h4>Manufacturer: Bobcat</h4>
                                 <h4>Model: S650</h4>
                                 <h4>Type: Skid Steer</h4>
                                 <h4>Year: 2009</h4>
                                 <h4>Hours: 3025</h4>
-                                <div class="card-text">This Bobcat S650 comes with an industrial grapple bucket.  No other attachments are included.  Operators manual and service manual included.  No maintenance log.</div>
+                                <div class="card-text">This Bobcat S650 comes with an industrial grapple bucket.  No other attachments are included.  Operators manual and service manual included.  No maintenance log.</div> -->
                             </div>
                         </div>
                     </div>
@@ -301,6 +312,14 @@
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     
+        <script>
+            $(function() {
+                var loiw = " " + $("#lotOneImg").width();
+                var loih = " " + $("#lotOneImg").height();
+                $("#loiwt").append(loiw);
+                $("#loiht").append(loih);
+            });
+        </script>
     </footer>
 
 </body>
