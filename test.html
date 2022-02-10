@@ -40,8 +40,8 @@
                             <div class="card-body">
                                 <h3>Lot 1</h3>
                                 <div class="square border border-primary">
-                                    <div class="squareContent">
-                                        <img src="/pics/BobcatS650SkidSteer.jpg" class="squareContent" alt="Bobcat S650 Skid Steer">
+                                    <div class="squareContent" id="lotOneSquareContent">
+                                        <img src="/pics/BobcatS650SkidSteer.jpg" class="squareContent" alt="Bobcat S650 Skid Steer" id="lotOneImg">
                                     </div>
                                 </div>
                                 <h4>Manufacturer: Bobcat</h4>
@@ -59,7 +59,7 @@
                                 <h2>Lot 2</h2>
                                 <div class="square border border-primary">
                                     <div class="squareContent">
-                                        <img src="/pics/BobcatT770SkidSteer.jpg" class="squareContent" alt="Bobcat T770 Skid Steer">
+                                        <img src="/pics/BobcatT770SkidSteer.jpg" class="card-img" alt="Bobcat T770 Skid Steer">
                                     </div>
                                 </div>
                                 <h4>Manufacturer: Bobcat</h4>
@@ -302,8 +302,7 @@
             </div>
             <div class="col-md-3">
                 <h2>Sidebar Test</h2>
-                <div id="widarr">Width Array</div>
-                <div id="heiarr">Height Array</div>
+                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, reiciendis explicabo molestiae eos, hic facilis blanditiis repudiandae qui nam unde eligendi, commodi sint dolor? Illum accusamus esse explicabo aut ipsam.</div>
             </div>
         </div>
     </div>
@@ -317,30 +316,15 @@
     
         <script>
             function squareUp() {
-                const cardCount = document.getElementsByClassName("squareContent").length/2;
-                alert(cardCount);
-                let imageWidth = "";
-                // alert(imageWidths);
-                let imageHeight = "";
-                // alert(imageHeights);
-                for (let i=0; i<cardCount; i++) {
-                        let imageMeasured = $(".squareContent").eq(i);
-                        imageWidth = imageMeasured.width();
-                        // alert(imageWidths);
-                        imageHeight = imageMeasured.height();
-                        // alert(imageHeights);
-                        let imageMover = "";
-                        if (imageWidth >= imageHeight) {
-                            imageMover = imageMover + ((imageWidth - imageHeight)/2) + "px";
-                            $imageMeasured.css("top", imageMover);
-                        }
-                        else {
-                            imageMover = imageMover + ((imageHeight - imageWidth)/2) + "px";
-                            $imageMeasured.css("left", imageMover);
-                        };
-                };
+                let loiw = $("#lotOneImg").width();
+                let loih = $("#lotOneImg").height();
+                let lpad = "";
+                if (loiw >= loih) {
+                    lpad = lpad + ((loiw - loih)/2) + "px";
+                    $("#lotOneSquareContent").css("top", lpad);
+                }
                 return;
-            }
+            };
         </script>
 
     </footer>
