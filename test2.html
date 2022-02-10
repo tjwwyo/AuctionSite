@@ -19,7 +19,7 @@
 
 </head>
 
-<body onload="squareUp()" onresize="squareUp()">
+<body onload="squareUp()" onload="squareAttribPull()" onresize="squareUp()">
     <header class="jumbotron">
         <div class="container-fluid">
             <div class="row">
@@ -40,9 +40,7 @@
                             <div class="card-body">
                                 <h3>Lot 1</h3>
                                 <div class="square border border-primary">
-                                    <div class="squareContent">
-                                        <img src="/pics/BobcatS650SkidSteer.jpg" class="squareContent" alt="Bobcat S650 Skid Steer">
-                                    </div>
+                                        <img src="/pics/BobcatS650SkidSteer.jpg" class="squareContent" alt="Bobcat S650 Skid Steer" id="lotOneImg">
                                 </div>
                                 <h4>Manufacturer: Bobcat</h4>
                                 <h4>Model: S650</h4>
@@ -58,9 +56,7 @@
                             <div class="card-body">
                                 <h2>Lot 2</h2>
                                 <div class="square border border-primary">
-                                    <div class="squareContent">
                                         <img src="/pics/BobcatT770SkidSteer.jpg" class="squareContent" alt="Bobcat T770 Skid Steer">
-                                    </div>
                                 </div>
                                 <h4>Manufacturer: Bobcat</h4>
                                 <h4>Model: T770</h4>
@@ -71,11 +67,13 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col">
+                    <div class="col">
                         <div class="card">
                             <div class="card-body">
                                 <h2>Lot 3</h2>
-                                <img src="/pics/Cat236SkidSteer.jpg" class="card-img" alt="Cat 236 Skid Steer">
+                                <div class="square border border-primary">
+                                    <img src="/pics/Cat236SkidSteer.jpg" class="squareContent" alt="Cat 236 Skid Steer">
+                                </div>
                                 <h4>Manufacturer: Caterpillar</h4>
                                 <h4>Model: 236</h4>
                                 <h4>Type: Skid Steer</h4>
@@ -89,7 +87,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <h2>Lot 4</h2>
-                                <img src="/pics/Cat322CTrackhoe.jpg" class="card-img" alt="Cat 322C Excavator">
+                                <div class="square border border-primary">
+                                    <img src="/pics/Cat322CTrackhoe.jpg" class="squareContent" alt="Cat 322C Excavator">
+                                </div>
                                 <h4>Manufacturer: Caterpillar</h4>
                                 <h4>Model: 322C</h4>
                                 <h4>Type: Excavator</h4>
@@ -103,7 +103,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <h2>Lot 5</h2>
-                                <img src="/pics/CatD19Bulldozer.jpg" class="card-img" alt="Cat D19 Bulldozer">
+                                <div class="square border border-primary">
+                                    <img src="/pics/CatD19Bulldozer.jpg" class="squareContent" alt="Cat D19 Bulldozer">
+                                </div>
                                 <h4>Manufacturer: Caterpillar</h4>
                                 <h4>Model: D19</h4>
                                 <h4>Type: Bulldozer</h4>
@@ -112,12 +114,14 @@
                                 <div class="card-text">This Caterpillar D19 bulldozer is not running.  Comes with operators manual.  No maintenance manual or log.</div>
                             </div>
                         </div>
-                    </div> -->
-                    <!-- <div class="col">
+                    </div>
+                    <div class="col">
                         <div class="card">
                             <div class="card-body">
                                 <h2>Lot 6</h2>
-                                <img src="/pics/DaewooForklift.jpg" class="card-img" alt="Daewoo D30S Forklift">
+                                <div class="square border border-primary">
+                                    <img src="/pics/DaewooForklift.jpg" class="squareContent" alt="Daewoo D30S Forklift">
+                                </div>
                                 <h4>Manufacturer: Daewoo</h4>
                                 <h4>Model: D30S</h4>
                                 <h4>Type: Forklift</h4>
@@ -131,7 +135,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <h2>Lot 7</h2>
-                                <img src="/pics/DoosanDL300FrontEndLoader.jpg" class="card-img" alt="Doosan DL300 Loader">
+                                <div class="square border border-primary">
+                                    <img src="/pics/DoosanDL300FrontEndLoader.jpg" class="squareContent" alt="Doosan DL300 Loader">
+                                </div>
                                 <h4>Manufacturer: Doosan</h4>
                                 <h4>Model: DL300</h4>
                                 <h4>Type: Front End Loader</h4>
@@ -145,7 +151,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <h2>Lot 8</h2>
-                                <img src="/pics/DoosanDX225LCTrackhoe.jpg" class="card-img" alt="Doosan DX225LC Trackhoe">
+                                <div class="square border border-primary">
+                                    <img src="/pics/DoosanDX225LCTrackhoe.jpg" class="squareContent" alt="Doosan DX225LC Trackhoe">
+                                </div>
                                 <h4>Manufacturer: Doosan</h4>
                                 <h4>Model: DX225LC</h4>
                                 <h4>Type: Excavator</h4>
@@ -159,7 +167,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <h2>Lot 9</h2>
-                                <img src="/pics/Hyundai210Trackhoe.jpg" class="card-img" alt="Hyundai 210 Trackhoe">
+                                <div class="square border border-primary">
+                                    <img src="/pics/Hyundai210Trackhoe.jpg" class="squareContent" alt="Hyundai 210 Trackhoe">
+                                </div>
                                 <h4>Manufacturer: Hyundai</h4>
                                 <h4>Model: 210</h4>
                                 <h4>Type: Excavator</h4>
@@ -173,7 +183,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <h2>Lot 10</h2>
-                                <img src="/pics/JCBT4iBackhoe.jpg" class="card-img" alt="JCB T4i Backhoe">
+                                <div class="square border border-primary">
+                                    <img src="/pics/JCBT4iBackhoe.jpg" class="squareContent" alt="JCB T4i Backhoe">
+                                </div>
                                 <h4>Manufacturer: JCB</h4>
                                 <h4>Model: T4i</h4>
                                 <h4>Type: Backhoe</h4>
@@ -187,7 +199,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <h2>Lot 11</h2>
-                                <img src="/pics/JohnDeere200DTrackhoe.jpg" class="card-img" alt="Deere 200D Trackhoe">
+                                <div class="square border border-primary">
+                                    <img src="/pics/JohnDeere200DTrackhoe.jpg" class="squareContent" alt="Deere 200D Trackhoe">
+                                </div>
                                 <h4>Manufacturer: Deere</h4>
                                 <h4>Model: 200D</h4>
                                 <h4>Type: Excavator</h4>
@@ -201,7 +215,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <h2>Lot 12</h2>
-                                <img src="/pics/KomatsuPC240LCTrackhoe.jpg" class="card-img" alt="Komatsu PC240LC Trackhoe">
+                                <div class="square border border-primary">
+                                    <img src="/pics/KomatsuPC240LCTrackhoe.jpg" class="squareContent" alt="Komatsu PC240LC Trackhoe">
+                                </div>
                                 <h4>Manufacturer: Komatsu</h4>
                                 <h4>Model: PC240LC</h4>
                                 <h4>Type: Excavator</h4>
@@ -215,7 +231,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <h2>Lot 13</h2>
-                                <img src="/pics/KomatsuPC400LCTrackhoe.jpg" class="card-img" alt="Komatsu PC400LC Trackhoe">
+                                <div class="square border border-primary">
+                                    <img src="/pics/KomatsuPC400LCTrackhoe.jpg" class="squareContent" alt="Komatsu PC400LC Trackhoe">
+                                </div>
                                 <h4>Manufacturer: Komatsu</h4>
                                 <h4>Model: PC400LC</h4>
                                 <h4>Type: Excavator</h4>
@@ -229,7 +247,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <h2>Lot 14</h2>
-                                <img src="/pics/KomatsuPC88MRTrackhoe.jpg" class="card-img" alt="Komatsu PC88MR Trackhoe">
+                                <div class="square border border-primary">
+                                    <img src="/pics/KomatsuPC88MRTrackhoe.jpg" class="squareContent" alt="Komatsu PC88MR Trackhoe">
+                                </div>
                                 <h4>Manufacturer: Komatsu</h4>
                                 <h4>Model: PC88MR</h4>
                                 <h4>Type: Mini Excavator</h4>
@@ -243,7 +263,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <h2>Lot 15</h2>
-                                <img src="/pics/MackCementMixer.jpg" class="card-img" alt="Mack Granite CV713 Cement Mixer">
+                                <div class="square border border-primary">
+                                    <img src="/pics/MackCementMixer.jpg" class="squareContent" alt="Mack Granite CV713 Cement Mixer">
+                                </div>
                                 <h4>Manufacturer: Mack</h4>
                                 <h4>Model: Granite CV713</h4>
                                 <h4>Type: Cement Mixer</h4>
@@ -258,7 +280,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <h2>Lot 16</h2>
-                                <img src="/pics/MackTwinAxleDumpTruck.jpg" class="card-img" alt="Mack Granite GU713 Dump Truck">
+                                <div class="square border border-primary">
+                                    <img src="/pics/MackTwinAxleDumpTruck.jpg" class="squareContent" alt="Mack Granite GU713 Dump Truck">
+                                </div>
                                 <h4>Manufacturer: Mack</h4>
                                 <h4>Model: GU713</h4>
                                 <h4>Type: Dump Truck</h4>
@@ -273,7 +297,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <h2>Lot 17</h2>
-                                <img src="/pics/MackTwinAxleDumpTruck2.jpg" class="card-img" alt="Mack RD688S Dump Truck">
+                                <div class="square border border-primary">
+                                    <img src="/pics/MackTwinAxleDumpTruck2.jpg" class="squareContent" alt="Mack RD688S Dump Truck">
+                                </div>
                                 <h4>Manufacturer: Mack</h4>
                                 <h4>Model: RD688S</h4>
                                 <h4>Type: Dump Truck</h4>
@@ -288,7 +314,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <h2>Lot 18</h2>
-                                <img src="/pics/VolvoBMFrontEndLoader.jpg" class="card-img" alt="Volvo LM1640 Loader">
+                                <div class="square border border-primary">
+                                    <img src="/pics/VolvoBMFrontEndLoader.jpg" class="squareContent" alt="Volvo LM1640 Loader">
+                                </div>
                                 <h4>Manufacturer: Volvo</h4>
                                 <h4>Model: LM1640</h4>
                                 <h4>Type: Front End Loader</h4>
@@ -297,13 +325,12 @@
                                 <div class="card-text">This BM-Volvo LM1640 articulated front end loader was last operated in 2010.  No manuals or maintenance log.</div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <h2>Sidebar Test</h2>
-                <div id="widarr">Width Array</div>
-                <div id="heiarr">Height Array</div>
+                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, reiciendis explicabo molestiae eos, hic facilis blanditiis repudiandae qui nam unde eligendi, commodi sint dolor? Illum accusamus esse explicabo aut ipsam.</div>
             </div>
         </div>
     </div>
@@ -316,31 +343,29 @@
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     
         <script>
+            // function squareAttribPull() {
+            //     let sqCon = document.getElementsByClassName("squareContent");
+            //     let sqCount = sqCon.length;
+            //     alert(sqCount);
+            //     return;
+            // };
+
             function squareUp() {
-                const cardCount = document.getElementsByClassName("squareContent").length/2;
-                // alert(cardCount);
-                let imageWidth = "";
-                // alert(imageWidths);
-                let imageHeight = "";
-                // alert(imageHeights);
-                for (let i=0; i<cardCount; i++) {
-                        let imageMeasured = $(".squareContent").eq(i);
-                        imageWidth = imageMeasured.width();
-                        // alert(imageWidths);
-                        imageHeight = imageMeasured.height();
-                        // alert(imageHeights);
-                        let imageMover = "";
-                        if (imageWidth >= imageHeight) {
-                            imageMover = imageMover + ((imageWidth - imageHeight)/2) + "px";
-                            $imageMeasured.css("top", imageMover);
-                        }
-                        else {
-                            imageMover = imageMover + ((imageHeight - imageWidth)/2) + "px";
-                            $imageMeasured.css("left", imageMover);
-                        };
-                };
-                return;
-            }
+                let sqConCount = document.getElementsByClassName("squareContent").length;
+                for (i=0; i<sqConCount; i++) {
+                    loiw = $(".squareContent").eq(i).width();
+                    loih = $(".squareContent").eq(i).height();
+                    lpad = "";
+                    if (loiw >= loih) {
+                        lpad = lpad + ((loiw - loih)/2) + "px";
+                        $(".squareContent").eq(i).css("top", lpad);
+                    }
+                    else {
+                        lpad = lpad + ((loih - loiw)/2) + "px";
+                        $(".squareContent").eq(i).css("top", lpad);
+                    }
+                }
+            };
         </script>
 
     </footer>
