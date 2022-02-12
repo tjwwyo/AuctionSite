@@ -26,7 +26,17 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    object-position: -50%;
+    object-fit: contain;
+    /* object-position: -50%; */
+}
+
+.squareContentTall {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: contain;
+    /* object-position: -50%; */
 }
 
 h4 {
