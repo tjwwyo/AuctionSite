@@ -22,28 +22,32 @@
 <!-- josefin sans, mulish, prompt, varela round, abel, overpass, questrial, jost, mitr, philosopher, el messiri, alata -->
 
 <body onload="squareUp()" onresize="squareUp()">
-    <header class="jumbotron">
+    <header>
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <h1>Bidders Choice Auctions</h1>
+                    <h1 style="text-decoration-line: underline;">BIDDERS' CHOICE AUCTION HOUSE</h1>
                 </div>
             </div>
             
         </div>
     </header>
 
-    <div class="container-fluid">
+    <div class="container-fluid"></div>
         <div class="row">
             <div class="col col-md-9">
                 <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h3>Lot 1</h3>
-                                <div class="square border border-primary">
-                                    <img src="/pics/BobcatS650SkidSteer.jpg" class="squareContent" alt="Bobcat S650 Skid Steer" id="lotOneImg">
+                                <h3 class="cardHeading">Lot 1</h3>
+                                <button class="btn btnCardPurchase">Purchase Lot 1</button>
+                                <div class="square">
+                                    <span role="button" data-toggle="modal" data-target="#Lot1PicModal">
+                                        <img src="/pics/BobcatS650SkidSteer.jpg" class="squareContent" alt="Bobcat S650 Skid Steer" id="lotOneImg">
+                                    </span>
                                 </div>
+                                <p></p>
                                 <h4><strong>Manufacturer:</strong> Bobcat</h4>
                                 <h4><strong>Model:</strong> S650</h4>
                                 <h4><strong>Type:</strong> Skid Steer</h4>
@@ -53,13 +57,34 @@
                             </div>
                         </div>
                     </div>
+                    <div id="Lot1PicModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col col-md-8">
+                                                <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col">
                         <div class="card h-100 sold">
                             <div class="card-body">
                                 <h2>Lot 2</h2>
-                                <div class="square border border-primary">
+                                <div class="square">
                                     <img src="/pics/BobcatT770SkidSteer.jpg" class="squareContent" alt="Bobcat T770 Skid Steer">
-                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent" alt="soldstamp">
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStamp" alt="soldstamp">
                                 </div>
                                 <h4><strong>Manufacturer:</strong> Bobcat</h4>
                                 <h4><strong>Model:</strong> T770</h4>
@@ -74,7 +99,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h2>Lot 3</h2>
-                                <div class="square border border-primary">
+                                <div class="square ">
                                     <img src="/pics/Cat236SkidSteer.jpg" class="squareContent" alt="Cat 236 Skid Steer">
                                 </div>
                                 <h4><strong>Manufacturer:</strong> Caterpillar</h4>
@@ -90,7 +115,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h2>Lot 4</h2>
-                                <div class="square border border-primary">
+                                <div class="square ">
                                     <img src="/pics/Cat322CTrackhoe.jpg" class="squareContent" alt="Cat 322C Excavator">
                                 </div>
                                 <h4><strong>Manufacturer:</strong> Caterpillar</h4>
@@ -106,7 +131,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h2>Lot 5</h2>
-                                <div class="square border border-primary">
+                                <div class="square ">
                                     <img src="/pics/CatD19Bulldozer.jpg" class="squareContent" alt="Cat D19 Bulldozer">
                                 </div>
                                 <h4><strong>Manufacturer:</strong> Caterpillar</h4>
@@ -122,7 +147,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h2>Lot 6</h2>
-                                <div class="square border border-primary">
+                                <div class="square ">
                                     <img src="/pics/DaewooForklift.jpg" class="squareContent" alt="Daewoo D30S Forklift">
                                 </div>
                                 <h4><strong>Manufacturer:</strong> Daewoo</h4>
@@ -138,7 +163,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h2>Lot 7</h2>
-                                <div class="square border border-primary">
+                                <div class="square ">
                                     <img src="/pics/DoosanDL300FrontEndLoader.jpg" class="squareContent" alt="Doosan DL300 Loader">
                                 </div>
                                 <h4><strong>Manufacturer:</strong> Doosan</h4>
@@ -154,7 +179,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h2>Lot 8</h2>
-                                <div class="square border border-primary">
+                                <div class="square ">
                                     <img src="/pics/DoosanDX225LCTrackhoe.jpg" class="squareContent" alt="Doosan DX225LC Trackhoe">
                                 </div>
                                 <h4><strong>Manufacturer:</strong> Doosan</h4>
@@ -170,7 +195,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h2>Lot 9</h2>
-                                <div class="square border border-primary">
+                                <div class="square ">
                                     <img src="/pics/Hyundai210Trackhoe.jpg" class="squareContent" alt="Hyundai 210 Trackhoe">
                                 </div>
                                 <h4><strong>Manufacturer:</strong> Hyundai</h4>
@@ -186,7 +211,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h2>Lot 10</h2>
-                                <div class="square border border-primary">
+                                <div class="square ">
                                     <img src="/pics/JCBT4iBackhoe.jpg" class="squareContent" alt="JCB T4i Backhoe">
                                 </div>
                                 <h4><strong>Manufacturer:</strong> JCB</h4>
@@ -202,7 +227,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h2>Lot 11</h2>
-                                <div class="square border border-primary">
+                                <div class="square ">
                                     <img src="/pics/JohnDeere200DTrackhoe.jpg" class="squareContent" alt="Deere 200D Trackhoe">
                                 </div>
                                 <h4><strong>Manufacturer:</strong> Deere</h4>
@@ -218,7 +243,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h2>Lot 12</h2>
-                                <div class="square border border-primary">
+                                <div class="square ">
                                     <img src="/pics/KomatsuPC240LCTrackhoe.jpg" class="squareContent" alt="Komatsu PC240LC Trackhoe">
                                 </div>
                                 <h4><strong>Manufacturer:</strong> Komatsu</h4>
@@ -234,7 +259,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h2>Lot 13</h2>
-                                <div class="square border border-primary">
+                                <div class="square ">
                                     <img src="/pics/KomatsuPC400LCTrackhoe.jpg" class="squareContent" alt="Komatsu PC400LC Trackhoe">
                                 </div>
                                 <h4><strong>Manufacturer:</strong> Komatsu</h4>
@@ -250,7 +275,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h2>Lot 14</h2>
-                                <div class="square border border-primary">
+                                <div class="square ">
                                     <img src="/pics/KomatsuPC88MRTrackhoe.jpg" class="squareContentTall" alt="Komatsu PC88MR Trackhoe">
                                 </div>
                                 <h4><strong>Manufacturer:</strong> Komatsu</h4>
@@ -266,7 +291,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h2>Lot 15</h2>
-                                <div class="square border border-primary">
+                                <div class="square ">
                                     <img src="/pics/MackCementMixer.jpg" class="squareContent" alt="Mack Granite CV713 Cement Mixer">
                                 </div>
                                 <div></div>
@@ -284,7 +309,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h2>Lot 16</h2>
-                                <div class="square border border-primary">
+                                <div class="square ">
                                     <img src="/pics/MackTwinAxleDumpTruck.jpg" class="squareContent" alt="Mack Granite GU713 Dump Truck">
                                 </div>
                                 <h4><strong>Manufacturer:</strong> Mack</h4>
@@ -301,7 +326,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h2>Lot 17</h2>
-                                <div class="square border border-primary">
+                                <div class="square ">
                                     <img src="/pics/MackTwinAxleDumpTruck2.jpg" class="squareContent" alt="Mack RD688S Dump Truck">
                                 </div>
                                 <h4><strong>Manufacturer:</strong> Mack</h4>
@@ -318,7 +343,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h2>Lot 18</h2>
-                                <div class="square border border-primary">
+                                <div class="square ">
                                     <img src="/pics/VolvoBMFrontEndLoader.jpg" class="squareContent" alt="Volvo LM1640 Loader">
                                 </div>
                                 <h4><strong>Manufacturer:</strong> Volvo</h4>
@@ -333,8 +358,32 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <h2>Sidebar Test</h2>
-                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, reiciendis explicabo molestiae eos, hic facilis blanditiis repudiandae qui nam unde eligendi, commodi sint dolor? Illum accusamus esse explicabo aut ipsam.</div>
+                <div class="sticky-top">
+                    <div class="border">
+                        <h3 class="text-center">AUCTION INFO</h3>
+                        <div><strong>BSC Construction Equipment Liquidation Auction</strong></div>
+                        <div>February 12, 2022</div>
+                        <div>Bidding opens 09:00 MST</div>
+                        <div>Online Only</div>
+                        <div>Auction ID: 6817-10321</div>
+                    </div>
+                    <p></p>
+                    <div class="border">
+                        <div>Signed in as Username: ThomasWhitney</div>
+                        <div>Prequalification: YES</div>
+                        <div>Prequalification Amount: $75,000.00</div>
+                    </div>
+                    <p></p>
+                    <div class="border">
+                        <h3 class="text-center">BIDDING IN PROGRESS</h3>
+                        <div>Current Round: 2</div>
+                        <div>Current Bid: $1,500.00</div>
+                        <div>Current Bid Increment: $100.00</div>
+                        <div>Next Bid: $1,600.00</div>
+                        <div>Time Since Last Bid: 00:16</div>
+                        <button class="btn btnBid  text-center">PLACE BID</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

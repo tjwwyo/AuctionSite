@@ -4,6 +4,12 @@ body {
     background-color: darkslategrey;
 }
 
+header {
+    opacity: 100%;
+    color: lightgrey;
+    background-color: darkslategrey;
+}
+
 .card {
     background-color: lightgrey;
     color: darkslategrey;
@@ -11,6 +17,10 @@ body {
 
 .sold {
     opacity: 50%;
+}
+
+.soldStamp {
+    display: block;
 }
 
 .square {
@@ -41,4 +51,23 @@ body {
 
 h4 {
     font-size: large;
+}
+
+.btnCardPurchase {
+    color: lightgrey;
+    background-color: darkslategrey;
+    border-radius: 0;
+    font-size: xx-large;
+    display: none;
+}
+
+.btnBid {
+    color: darkslategrey;
+    background-color: lightgrey;
+    border-radius: 0;
+    font-size: x-large;
+}
+
+.popupPic {
+    object-fit: contain;
 }

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <!-- <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" /> -->
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <!-- endbuild -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 
@@ -39,6 +39,11 @@
                         <div class="card">
                             <div class="card-body">
                                 <h3>Lot 1</h3>
+                                <button role="button" data-toggle="modal" data-target="#testmodal">click</button>
+                                <a role="button" data-toggle="modal" data-target="#testmodal">
+                                    <i class="fa fa-sign-in"></i> Login
+                                </a>
+            
                                 <div class="square border border-primary">
                                         <img src="/pics/BobcatS650SkidSteer.jpg" class="squareContent" alt="Bobcat S650 Skid Steer" id="lotOneImg">
                                 </div>
@@ -51,6 +56,24 @@
                             </div>
                         </div>
                     </div>
+                    <div id="testmodal" class="modal fade" tabindex="-1">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">Modal title</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p>Modal body text goes here.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
                     <div class="col">
                         <div class="card">
                             <div class="card-body">
@@ -67,233 +90,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2>Lot 3</h2>
-                                <img src="/pics/Cat236SkidSteer.jpg" class="squareContent" alt="Cat 236 Skid Steer">
-                                <h4>Manufacturer: Caterpillar</h4>
-                                <h4>Model: 236</h4>
-                                <h4>Type: Skid Steer</h4>
-                                <h4>Year: 1999</h4>
-                                <h4>Hours: 4909</h4>
-                                <div class="card-text">This Cat 236 comes with a bucket.  No other attachments are included.  No manuals or maintenance log.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2>Lot 4</h2>
-                                <img src="/pics/Cat322CTrackhoe.jpg" class="squareContent" alt="Cat 322C Excavator">
-                                <h4>Manufacturer: Caterpillar</h4>
-                                <h4>Model: 322C</h4>
-                                <h4>Type: Excavator</h4>
-                                <h4>Year: 2017</h4>
-                                <h4>Hours: 591</h4>
-                                <div class="card-text">This Caterpillar 322C tracked excavator is lightly used and in excellent condition, and comes with operators and maintenance manuals and complete maintenance log.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2>Lot 5</h2>
-                                <img src="/pics/CatD19Bulldozer.jpg" class="squareContent" alt="Cat D19 Bulldozer">
-                                <h4>Manufacturer: Caterpillar</h4>
-                                <h4>Model: D19</h4>
-                                <h4>Type: Bulldozer</h4>
-                                <h4>Year: 1997</h4>
-                                <h4>Hours: Unknown</h4>
-                                <div class="card-text">This Caterpillar D19 bulldozer is not running.  Comes with operators manual.  No maintenance manual or log.</div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2>Lot 6</h2>
-                                <img src="/pics/DaewooForklift.jpg" class="squareContent" alt="Daewoo D30S Forklift">
-                                <h4>Manufacturer: Daewoo</h4>
-                                <h4>Model: D30S</h4>
-                                <h4>Type: Forklift</h4>
-                                <h4>Year: 2003</h4>
-                                <h4>Hours: 6267</h4>
-                                <div class="card-text">This Daewoo forklift is diesel powered and for outdoor use only.  Comes with full length forks.  Comes with operators manual and full maintenance log, no maintenance manual.  Has not been driven in approximately 5 years.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2>Lot 7</h2>
-                                <img src="/pics/DoosanDL300FrontEndLoader.jpg" class="squareContent" alt="Doosan DL300 Loader">
-                                <h4>Manufacturer: Doosan</h4>
-                                <h4>Model: DL300</h4>
-                                <h4>Type: Front End Loader</h4>
-                                <h4>Year: 2014</h4>
-                                <h4>Hours: 1495</h4>
-                                <div class="card-text">This Doosan DL300 articulated loader is in excellent shape, and had all hydraulic seals replaced in 2019.  Comes with owners and maintenance manuals and full maintenance log.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2>Lot 8</h2>
-                                <img src="/pics/DoosanDX225LCTrackhoe.jpg" class="squareContent" alt="Doosan DX225LC Trackhoe">
-                                <h4>Manufacturer: Doosan</h4>
-                                <h4>Model: DX225LC</h4>
-                                <h4>Type: Excavator</h4>
-                                <h4>Year: 2019</h4>
-                                <h4>Hours: 102</h4>
-                                <div class="card-text">This Doosan DX225LC tracked excavator is in pristine, nearly new condition.  It comes with owners and maintenance manuals and full maintenance log.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2>Lot 9</h2>
-                                <img src="/pics/Hyundai210Trackhoe.jpg" class="squareContent" alt="Hyundai 210 Trackhoe">
-                                <h4>Manufacturer: Hyundai</h4>
-                                <h4>Model: 210</h4>
-                                <h4>Type: Excavator</h4>
-                                <h4>Year: 2013</h4>
-                                <h4>Hours: 3332</h4>
-                                <div class="card-text">This Hyundai 210 tracked excavator has had extensive repairs to the cabin controls in 2016.  Comes with log grapple attachment.  Has owners manual and full maintenance log.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2>Lot 10</h2>
-                                <img src="/pics/JCBT4iBackhoe.jpg" class="squareContent" alt="JCB T4i Backhoe">
-                                <h4>Manufacturer: JCB</h4>
-                                <h4>Model: T4i</h4>
-                                <h4>Type: Backhoe</h4>
-                                <h4>Year: 2006</h4>
-                                <h4>Hours: 4744</h4>
-                                <div class="card-text">This JCB T4i backhoe comes with a PTO pavement breaker that attaches to the rear boom.  Comes with owners and maintenance manuals.  No maintenance log.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2>Lot 11</h2>
-                                <img src="/pics/JohnDeere200DTrackhoe.jpg" class="squareContent" alt="Deere 200D Trackhoe">
-                                <h4>Manufacturer: Deere</h4>
-                                <h4>Model: 200D</h4>
-                                <h4>Type: Excavator</h4>
-                                <h4>Year: 2015</h4>
-                                <h4>Hours: 470</h4>
-                                <div class="card-text">This Deere 200D tracked excavator is in good condition.  Comes with owners and maintenance manuals and full maintenance log.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2>Lot 12</h2>
-                                <img src="/pics/KomatsuPC240LCTrackhoe.jpg" class="squareContent" alt="Komatsu PC240LC Trackhoe">
-                                <h4>Manufacturer: Komatsu</h4>
-                                <h4>Model: PC240LC</h4>
-                                <h4>Type: Excavator</h4>
-                                <h4>Year: 2017</h4>
-                                <h4>Hours: 1800</h4>
-                                <div class="card-text">This Komatsu PC240LC tracked excavator needs maintenance on the hydraulic system, and comes with spare parts for the hydraulic pump and hoses.  Comes with owners and maintenance manuals, no maintenance log.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2>Lot 13</h2>
-                                <img src="/pics/KomatsuPC400LCTrackhoe.jpg" class="squareContent" alt="Komatsu PC400LC Trackhoe">
-                                <h4>Manufacturer: Komatsu</h4>
-                                <h4>Model: PC400LC</h4>
-                                <h4>Type: Excavator</h4>
-                                <h4>Year: 2006</h4>
-                                <h4>Hours: 7220</h4>
-                                <div class="card-text">This Komatsu PC400LC tracked excavator comes with a grapple bucket.  Engine replaced in 2011.  Has owners manual.  No maintenance manual or maintenance log.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2>Lot 14</h2>
-                                <img src="/pics/KomatsuPC88MRTrackhoe.jpg" class="squareContent" alt="Komatsu PC88MR Trackhoe">
-                                <h4>Manufacturer: Komatsu</h4>
-                                <h4>Model: PC88MR</h4>
-                                <h4>Type: Mini Excavator</h4>
-                                <h4>Year: 2014</h4>
-                                <h4>Hours: 779</h4>
-                                <div class="card-text">This Komatsu PC88MR mini excavator is lightly used and well maintained.  Comes with log grapple and post driver attachments in addition to bucket.  Comes with owners and maintenance manuals, maintenance log, and manufacturer's authorized tool kit.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2>Lot 15</h2>
-                                <img src="/pics/MackCementMixer.jpg" class="squareContent" alt="Mack Granite CV713 Cement Mixer">
-                                <h4>Manufacturer: Mack</h4>
-                                <h4>Model: Granite CV713</h4>
-                                <h4>Type: Cement Mixer</h4>
-                                <h4>Year: 2005</h4>
-                                <h4>Hours: Unknown</h4>
-                                <h4>Mileage: 106,044</h4>
-                                <div class="card-text">This Mack Granite CV713 cement mixer truck needs substantial repairs to the rear axles and differential.  Out of service since 2018.  Cement mixer worked when taken out of service.  No manuals or maintenance log.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2>Lot 16</h2>
-                                <img src="/pics/MackTwinAxleDumpTruck.jpg" class="squareContent" alt="Mack Granite GU713 Dump Truck">
-                                <h4>Manufacturer: Mack</h4>
-                                <h4>Model: GU713</h4>
-                                <h4>Type: Dump Truck</h4>
-                                <h4>Year: 2016</h4>
-                                <h4>Hours: Unknown</h4>
-                                <h4>Mileage: 61,117</h4>
-                                <div class="card-text">This Mack Granite GU713 dump truck is in excellent condition and has been well maintained.  Comes with owners and maintenance manuals.  Has full maintenance log.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2>Lot 17</h2>
-                                <img src="/pics/MackTwinAxleDumpTruck2.jpg" class="squareContent" alt="Mack RD688S Dump Truck">
-                                <h4>Manufacturer: Mack</h4>
-                                <h4>Model: RD688S</h4>
-                                <h4>Type: Dump Truck</h4>
-                                <h4>Year: 2000</h4>
-                                <h4>Hours: Unknown</h4>
-                                <h4>Mileage: 224,201</h4>
-                                <div class="card-text">This Mack RD688S dump truck had a new dump bed and hydraulic cylinder installed in 2011, an engine rebuild in 2015, and a new transmission in 2016.  No manuals or maintenance log.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2>Lot 18</h2>
-                                <img src="/pics/VolvoBMFrontEndLoader.jpg" class="squareContent" alt="Volvo LM1640 Loader">
-                                <h4>Manufacturer: Volvo</h4>
-                                <h4>Model: LM1640</h4>
-                                <h4>Type: Front End Loader</h4>
-                                <h4>Year: 1972</h4>
-                                <h4>Hours: Unknown</h4>
-                                <div class="card-text">This BM-Volvo LM1640 articulated front end loader was last operated in 2010.  No manuals or maintenance log.</div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
             <div class="col-md-3">
