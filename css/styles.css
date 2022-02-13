@@ -13,6 +13,7 @@ header {
 .card {
     background-color: lightgrey;
     color: darkslategrey;
+    border-radius: 0;
 }
 
 .sold {
@@ -70,4 +71,17 @@ h4 {
 
 .popupPic {
     object-fit: contain;
+    width: 100%;
+}
+
+.modal-content {
+    background-color: darkslategrey;
+}
+
+.modal-header {
+    color: lightgrey;
+}
+
+.btn-close {
+    color: lightgrey;
 }

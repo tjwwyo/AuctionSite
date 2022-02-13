@@ -26,7 +26,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <h1 style="text-decoration-line: underline;">BIDDERS' CHOICE AUCTION HOUSE</h1>
+                    <h1 style="text-decoration-line: underline;">BIDDERS' CHOICE ONLINE AUCTION HOUSE</h1>
                 </div>
             </div>
             
@@ -37,13 +37,14 @@
         <div class="row">
             <div class="col col-md-9">
                 <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+                    <!-- Lot 1 Card -->
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h3 class="cardHeading">Lot 1</h3>
                                 <button class="btn btnCardPurchase">Purchase Lot 1</button>
                                 <div class="square">
-                                    <span role="button" data-toggle="modal" data-target="#Lot1PicModal">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#Lot1PicModal">
                                         <img src="/pics/BobcatS650SkidSteer.jpg" class="squareContent" alt="Bobcat S650 Skid Steer" id="lotOneImg">
                                     </span>
                                 </div>
@@ -57,21 +58,21 @@
                             </div>
                         </div>
                     </div>
-                    <div id="Lot1PicModal" class="modal fade" role="dialog">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div id="Lot1PicModal" class="modal modal-xl modal-fullscreen-sm-down fade">
+                        <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
+                                <!-- <div class="modal-header">
+                                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                                </div> -->
                                 <div class="modal-body">
                                     <div class="container-fluid">
                                         <div class="row">
-                                            <div class="col col-md-8">
+                                            <div class="col">
                                                 <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic">
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btnBid btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
@@ -361,7 +362,7 @@
                 <div class="sticky-top">
                     <div class="border">
                         <h3 class="text-center">AUCTION INFO</h3>
-                        <div><strong>BSC Construction Equipment Liquidation Auction</strong></div>
+                        <div><strong>BSC Construction Liquidation Auction</strong></div>
                         <div>February 12, 2022</div>
                         <div>Bidding opens 09:00 MST</div>
                         <div>Online Only</div>
