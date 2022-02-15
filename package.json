@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ css/",
     "start": "npm run lite",
     "lite": "lite-server"
   },
@@ -19,6 +20,7 @@
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "node-sass": "^4.14.1"
   }
 }
