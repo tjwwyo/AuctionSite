@@ -44,7 +44,7 @@
                                 <h3 class="cardHeading">Lot 1</h3>
                                 <button class="btn btnCardPurchase">Purchase Lot 1</button>
                                 <div class="square">
-                                    <span role="button" data-bs-toggle="modal" data-bs-target="#Lot1PicModal">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#LotOnePicModal">
                                         <img src="/pics/BobcatS650SkidSteer.jpg" class="squareContent" alt="Bobcat S650 Skid Steer" id="lotOneImg">
                                     </span>
                                 </div>
@@ -58,17 +58,37 @@
                             </div>
                         </div>
                     </div>
-                    <div id="Lot1PicModal" class="modal modal-xl modal-fullscreen-sm-down fade">
-                        <div class="modal-dialog modal-dialog-centered">
+                    <div id="LotOnePicModal" class="modal modal-fullscreen-sm-down fade">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
                             <div class="modal-content">
-                                <!-- <div class="modal-header">
-                                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
-                                </div> -->
                                 <div class="modal-body">
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col">
-                                                <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic">
+                                                <!-- inserting carousel here -->
+                                                <div id="lotOneCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active" data-bs-interval="3000">
+                                                        <img src="pics/BobcatS650SkidSteer.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/BobcatS650SkidSteerBW.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/BobcatS650SkidSteerUD.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#lotOneCarousel" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#lotOneCarousel" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                                <!-- inserting carousel here -->
+                                                <!-- <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic"> -->
                                             </div>
                                         </div>
                                         <div class="modal-footer">
