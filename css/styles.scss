@@ -72,7 +72,7 @@ h4 {
     font-size: large;
 }
 
-.btnCardPurchaseOff {
+.btnCardPurchase {
     color: lightgrey;
     background-color: darkslategrey;
     border-radius: 0;
@@ -80,13 +80,13 @@ h4 {
     display: none;
 }
 
-.btnCardPurchaseOn {
-    color: lightgrey;
-    background-color: darkslategrey;
-    border-radius: 0;
-    font-size: large;
-    display: block;
-}
+// .btnCardPurchaseOn {
+//     color: lightgrey;
+//     background-color: darkslategrey;
+//     border-radius: 0;
+//     font-size: large;
+//     display: block;
+// }
 
 .btnSiteControl {
     color: darkslategrey;
@@ -112,10 +112,10 @@ h4 {
 //     color: lightgrey;
 // }
 
-.cardHeaderOn {
-    display: block;
-}
+// .cardHeaderOn {
+//     display: block;
+// }
 
-.cardHeaderOff {
-    display: none;
-}
+// .cardHeaderOff {
+//     display: none;
+// }

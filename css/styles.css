@@ -7856,19 +7856,12 @@ header {
 h4, .h4 {
   font-size: large; }
 
-.btnCardPurchaseOff {
+.btnCardPurchase {
   color: lightgrey;
   background-color: darkslategrey;
   border-radius: 0;
   font-size: large;
   display: none; }
-
-.btnCardPurchaseOn {
-  color: lightgrey;
-  background-color: darkslategrey;
-  border-radius: 0;
-  font-size: large;
-  display: block; }
 
 .btnSiteControl {
   color: darkslategrey;
@@ -7885,9 +7878,3 @@ h4, .h4 {
 
 .modal-header {
   color: lightgrey; }
-
-.cardHeaderOn {
-  display: block; }
-
-.cardHeaderOff {
-  display: none; }
