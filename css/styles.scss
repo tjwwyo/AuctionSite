@@ -24,12 +24,22 @@ header {
     border-radius: 0;
 }
 
-.sold {
+.cardSold {
+    background-color: rgba(211,211,211,0.5);
+    color: rgba(47,79,79,0.5);
+    border-radius: 0;
+}
+
+.soldImg {
     opacity: 50%;
 }
 
-.soldStamp {
+.soldStampOn {
     display: block;
+}
+
+.soldStampOff {
+    display: none;
 }
 
 .square {
@@ -49,32 +59,40 @@ header {
     /* object-position: -50%; */
 }
 
-.squareContentTall {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    object-fit: contain;
-    /* object-position: -50%; */
-}
+// .squareContentTall {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     object-fit: contain;
+//     /* object-position: -50%; */
+// }
 
 h4 {
     font-size: large;
 }
 
-.btnCardPurchase {
+.btnCardPurchaseOff {
     color: lightgrey;
     background-color: darkslategrey;
     border-radius: 0;
-    font-size: xx-large;
+    font-size: large;
     display: none;
 }
 
-.btnBid {
+.btnCardPurchaseOn {
+    color: lightgrey;
+    background-color: darkslategrey;
+    border-radius: 0;
+    font-size: large;
+    display: block;
+}
+
+.btnSiteControl {
     color: darkslategrey;
     background-color: lightgrey;
     border-radius: 0;
-    font-size: x-large;
+    font-size: large;
 }
 
 .popupPic {
@@ -90,6 +108,14 @@ h4 {
     color: lightgrey;
 }
 
-.btn-close {
-    color: lightgrey;
+// .btn-close {
+//     color: lightgrey;
+// }
+
+.cardHeaderOn {
+    display: block;
+}
+
+.cardHeaderOff {
+    display: none;
 }

@@ -41,12 +41,13 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h3 class="cardHeading">Lot 1</h3>
-                                <button class="btn btnCardPurchase">Purchase Lot 1</button>
+                                <h3 class="cardHeaderOn">LOT 1</h3>
+                                <button class="btn btnCardPurchase">PURCHASE</button>
                                 <div class="square">
-                                    <span role="button" data-bs-toggle="modal" data-bs-target="#LotOnePicModal">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#lotOnePicModal">
                                         <img src="/pics/BobcatS650SkidSteer.jpg" class="squareContent" alt="Bobcat S650 Skid Steer" id="lotOneImg">
                                     </span>
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStampOff" alt="soldstamp">
                                 </div>
                                 <p></p>
                                 <h4><strong>Manufacturer:</strong> Bobcat</h4>
@@ -58,7 +59,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="LotOnePicModal" class="modal modal-fullscreen-sm-down fade">
+                    <div id="lotOnePicModal" class="modal modal-fullscreen-sm-down fade">
                         <div class="modal-dialog modal-lg modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-body">
@@ -92,7 +93,7 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btnBid btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btnSiteControl btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
@@ -100,13 +101,17 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100 sold">
+                        <div class="card h-100">
                             <div class="card-body">
-                                <h2>Lot 2</h2>
+                                <h3>LOT 2</h3>
+                                <button class="btn btnCardPurchase">PURCHASE</button>
                                 <div class="square">
-                                    <img src="/pics/BobcatT770SkidSteer.jpg" class="squareContent" alt="Bobcat T770 Skid Steer">
-                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStamp" alt="soldstamp">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#lotTwoPicModal">
+                                        <img src="/pics/BobcatT770SkidSteer.jpg" class="squareContent" alt="Bobcat T770 Skid Steer">
+                                    </span>
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStampOff" alt="soldstamp">
                                 </div>
+                                <p></p>
                                 <h4><strong>Manufacturer:</strong> Bobcat</h4>
                                 <h4><strong>Model:</strong> T770</h4>
                                 <h4><strong>Type:</strong> Skid Steer</h4>
@@ -116,13 +121,60 @@
                             </div>
                         </div>
                     </div>
+                    <div id="lotTwoPicModal" class="modal modal-fullscreen-sm-down fade">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col">
+                                                <!-- inserting carousel here -->
+                                                <div id="lotTwoCarousel" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active" data-bs-interval="3000">
+                                                        <img src="pics/BobcatT770SkidSteer.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/BobcatT770SkidSteerBW.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/BobcatT770SkidSteerUD.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#lotTwoCarousel" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#lotTwoCarousel" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                                <!-- inserting carousel here -->
+                                                <!-- <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic"> -->
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btnSiteControl btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h2>Lot 3</h2>
+                                <h3>LOT 3</h3>
+                                <button class="btn btnCardPurchase">PURCHASE</button>
                                 <div class="square ">
-                                    <img src="/pics/Cat236SkidSteer.jpg" class="squareContent" alt="Cat 236 Skid Steer">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#lotThreePicModal">
+                                        <img src="/pics/Cat236SkidSteer.jpg" class="squareContent" alt="Cat 236 Skid Steer">
+                                    </span>
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStampOff" alt="soldstamp">
                                 </div>
+                                <p></p>
                                 <h4><strong>Manufacturer:</strong> Caterpillar</h4>
                                 <h4><strong>Model:</strong> 236</h4>
                                 <h4><strong>Type:</strong> Skid Steer</h4>
@@ -132,13 +184,60 @@
                             </div>
                         </div>
                     </div>
+                    <div id="lotThreePicModal" class="modal modal-fullscreen-sm-down fade">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col">
+                                                <!-- inserting carousel here -->
+                                                <div id="lotThreeCarousel" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active" data-bs-interval="3000">
+                                                        <img src="pics/Cat236SkidSteer.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/Cat236SkidSteerBW.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/Cat236SkidSteerUD.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#lotThreeCarousel" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#lotThreeCarousel" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                                <!-- inserting carousel here -->
+                                                <!-- <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic"> -->
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btnSiteControl btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h2>Lot 4</h2>
-                                <div class="square ">
-                                    <img src="/pics/Cat322CTrackhoe.jpg" class="squareContent" alt="Cat 322C Excavator">
+                                <h3>LOT 4</h3>
+                                <button class="btn btnCardPurchase">PURCHASE</button>
+                                <div class="square">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#lotFourPicModal">
+                                        <img src="/pics/Cat322CTrackhoe.jpg" class="squareContent" alt="Cat 322C Excavator">
+                                    </span>
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStampOff" alt="soldstamp">
                                 </div>
+                                <p></p>
                                 <h4><strong>Manufacturer:</strong> Caterpillar</h4>
                                 <h4><strong>Model:</strong> 322C</h4>
                                 <h4><strong>Type:</strong> Excavator</h4>
@@ -148,13 +247,60 @@
                             </div>
                         </div>
                     </div>
+                    <div id="lotFourPicModal" class="modal modal-fullscreen-sm-down fade">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col">
+                                                <!-- inserting carousel here -->
+                                                <div id="lotFourCarousel" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active" data-bs-interval="3000">
+                                                        <img src="pics/Cat322CTrackhoe.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/Cat322CTrackhoeBW.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/Cat322CTrackhoeUD.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#lotFourCarousel" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#lotFourCarousel" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                                <!-- inserting carousel here -->
+                                                <!-- <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic"> -->
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btnSiteControl btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h2>Lot 5</h2>
+                                <h3>LOT 5</h3>
+                                <button class="btn btnCardPurchase">PURCHASE</button>
                                 <div class="square ">
-                                    <img src="/pics/CatD19Bulldozer.jpg" class="squareContent" alt="Cat D19 Bulldozer">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#lotFivePicModal">
+                                        <img src="/pics/CatD19Bulldozer.jpg" class="squareContent" alt="Cat D19 Bulldozer">
+                                    </span>
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStampOff" alt="soldstamp">
                                 </div>
+                                <p></p>
                                 <h4><strong>Manufacturer:</strong> Caterpillar</h4>
                                 <h4><strong>Model:</strong> D19</h4>
                                 <h4><strong>Type:</strong> Bulldozer</h4>
@@ -164,13 +310,60 @@
                             </div>
                         </div>
                     </div>
+                    <div id="lotFivePicModal" class="modal modal-fullscreen-sm-down fade">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col">
+                                                <!-- inserting carousel here -->
+                                                <div id="lotFiveCarousel" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active" data-bs-interval="3000">
+                                                        <img src="pics/CatD19Bulldozer.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/CatD19BulldozerBW.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/CatD19BulldozerUD.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#lotOneCarousel" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#lotOneCarousel" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                                <!-- inserting carousel here -->
+                                                <!-- <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic"> -->
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btnSiteControl btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h2>Lot 6</h2>
+                                <h3>LOT 6</h3>
+                                <button class="btn btnCardPurchase">PURCHASE</button>
                                 <div class="square ">
-                                    <img src="/pics/DaewooForklift.jpg" class="squareContent" alt="Daewoo D30S Forklift">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#lotSixPicModal">
+                                        <img src="/pics/DaewooForklift.jpg" class="squareContent" alt="Daewoo D30S Forklift">
+                                    </span>
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStampOff" alt="soldstamp">
                                 </div>
+                                <p></p>
                                 <h4><strong>Manufacturer:</strong> Daewoo</h4>
                                 <h4><strong>Model:</strong> D30S</h4>
                                 <h4><strong>Type:</strong> Forklift</h4>
@@ -180,13 +373,60 @@
                             </div>
                         </div>
                     </div>
+                    <div id="lotSixPicModal" class="modal modal-fullscreen-sm-down fade">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col">
+                                                <!-- inserting carousel here -->
+                                                <div id="lotSixCarousel" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active" data-bs-interval="3000">
+                                                        <img src="pics/DaewooForklift.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/DaewooForkliftBW.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/DaewooForkliftUD.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#lotSixCarousel" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#lotSixCarousel" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                                <!-- inserting carousel here -->
+                                                <!-- <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic"> -->
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btnSiteControl btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h2>Lot 7</h2>
+                                <h3>LOT 7</h3>
+                                <button class="btn btnCardPurchase">PURCHASE</button>
                                 <div class="square ">
-                                    <img src="/pics/DoosanDL300FrontEndLoader.jpg" class="squareContent" alt="Doosan DL300 Loader">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#lotSevenPicModal">
+                                        <img src="/pics/DoosanDL300FrontEndLoader.jpg" class="squareContent" alt="Doosan DL300 Loader">
+                                    </span>
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStampOff" alt="soldstamp">
                                 </div>
+                                <p></p>
                                 <h4><strong>Manufacturer:</strong> Doosan</h4>
                                 <h4><strong>Model:</strong> DL300</h4>
                                 <h4><strong>Type:</strong> Front End Loader</h4>
@@ -196,13 +436,60 @@
                             </div>
                         </div>
                     </div>
+                    <div id="lotSevenPicModal" class="modal modal-fullscreen-sm-down fade">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col">
+                                                <!-- inserting carousel here -->
+                                                <div id="lotSevenCarousel" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active" data-bs-interval="3000">
+                                                        <img src="pics/DoosanDL300FrontEndLoader.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/DoosanDL300FrontEndLoaderBW.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/DoosanDL300FrontEndLoaderUD.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#lotSevenCarousel" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#lotSevenCarousel" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                                <!-- inserting carousel here -->
+                                                <!-- <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic"> -->
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btnSiteControl btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h2>Lot 8</h2>
+                                <h3>LOT 8</h3>
+                                <button class="btn btnCardPurchase">PURCHASE</button>
                                 <div class="square ">
-                                    <img src="/pics/DoosanDX225LCTrackhoe.jpg" class="squareContent" alt="Doosan DX225LC Trackhoe">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#lotEightPicModal">   
+                                        <img src="/pics/DoosanDX225LCTrackhoe.jpg" class="squareContent" alt="Doosan DX225LC Trackhoe">
+                                    </span>
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStampOff" alt="soldstamp">
                                 </div>
+                                <p></p>
                                 <h4><strong>Manufacturer:</strong> Doosan</h4>
                                 <h4><strong>Model:</strong> DX225LC</h4>
                                 <h4><strong>Type:</strong> Excavator</h4>
@@ -212,13 +499,60 @@
                             </div>
                         </div>
                     </div>
+                    <div id="lotEightPicModal" class="modal modal-fullscreen-sm-down fade">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col">
+                                                <!-- inserting carousel here -->
+                                                <div id="lotEightCarousel" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active" data-bs-interval="3000">
+                                                        <img src="pics/DoosanDX225LCTrackhoe.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/DoosanDX225LCTrackhoeBW.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/DoosanDX225LCTrackhoeUD.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#lotEightCarousel" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#lotEightCarousel" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                                <!-- inserting carousel here -->
+                                                <!-- <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic"> -->
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btnSiteControl btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h2>Lot 9</h2>
+                                <h3>LOT 9</h3>
+                                <button class="btn btnCardPurchase">PURCHASE</button>
                                 <div class="square ">
-                                    <img src="/pics/Hyundai210Trackhoe.jpg" class="squareContent" alt="Hyundai 210 Trackhoe">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#lotNinePicModal">
+                                        <img src="/pics/Hyundai210Trackhoe.jpg" class="squareContent" alt="Hyundai 210 Trackhoe">
+                                    </span>
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStampOff" alt="soldstamp">
                                 </div>
+                                <p></p>
                                 <h4><strong>Manufacturer:</strong> Hyundai</h4>
                                 <h4><strong>Model:</strong> 210</h4>
                                 <h4><strong>Type:</strong> Excavator</h4>
@@ -228,13 +562,60 @@
                             </div>
                         </div>
                     </div>
+                    <div id="lotNinePicModal" class="modal modal-fullscreen-sm-down fade">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col">
+                                                <!-- inserting carousel here -->
+                                                <div id="lotNineCarousel" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active" data-bs-interval="3000">
+                                                        <img src="pics/Hyundai210Trackhoe.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/Hyundai210TrackhoeBW.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/Hyundai210TrackhoeUD.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#lotNineCarousel" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#lotNineCarousel" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                                <!-- inserting carousel here -->
+                                                <!-- <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic"> -->
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btnSiteControl btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h2>Lot 10</h2>
+                                <h3>LOT 10</h3>
+                                <button class="btn btnCardPurchase">PURCHASE</button>
                                 <div class="square ">
-                                    <img src="/pics/JCBT4iBackhoe.jpg" class="squareContent" alt="JCB T4i Backhoe">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#lotTenPicModal">
+                                        <img src="/pics/JCBT4iBackhoe.jpg" class="squareContent" alt="JCB T4i Backhoe">
+                                    </span>
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStampOff" alt="soldstamp">
                                 </div>
+                                <p></p>
                                 <h4><strong>Manufacturer:</strong> JCB</h4>
                                 <h4><strong>Model:</strong> T4i</h4>
                                 <h4><strong>Type:</strong> Backhoe</h4>
@@ -244,13 +625,60 @@
                             </div>
                         </div>
                     </div>
+                    <div id="lotTenPicModal" class="modal modal-fullscreen-sm-down fade">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col">
+                                                <!-- inserting carousel here -->
+                                                <div id="lotTenCarousel" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active" data-bs-interval="3000">
+                                                        <img src="pics/JCBT4iBackhoe.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/JCBT4iBackhoeBW.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/JCBT4iBackhoeUD.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#lotTenCarousel" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#lotTenCarousel" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                                <!-- inserting carousel here -->
+                                                <!-- <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic"> -->
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btnSiteControl btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h2>Lot 11</h2>
+                                <h3>LOT 11</h3>
+                                <button class="btn btnCardPurchase">PURCHASE</button>
                                 <div class="square ">
-                                    <img src="/pics/JohnDeere200DTrackhoe.jpg" class="squareContent" alt="Deere 200D Trackhoe">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#lotElevenPicModal">
+                                        <img src="/pics/JohnDeere200DTrackhoe.jpg" class="squareContent" alt="Deere 200D Trackhoe">
+                                    </span>
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStampOff" alt="soldstamp">
                                 </div>
+                                <p></p>
                                 <h4><strong>Manufacturer:</strong> Deere</h4>
                                 <h4><strong>Model:</strong> 200D</h4>
                                 <h4><strong>Type:</strong> Excavator</h4>
@@ -260,13 +688,60 @@
                             </div>
                         </div>
                     </div>
+                    <div id="lotElevenPicModal" class="modal modal-fullscreen-sm-down fade">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col">
+                                                <!-- inserting carousel here -->
+                                                <div id="lotElevenCarousel" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active" data-bs-interval="3000">
+                                                        <img src="pics/JohnDeere200DTrackhoe.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/JohnDeere200DTrackhoeBW.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/JohnDeere200DTrackhoeUD.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#lotElevenCarousel" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#lotElevenCarousel" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                                <!-- inserting carousel here -->
+                                                <!-- <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic"> -->
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btnSiteControl btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h2>Lot 12</h2>
+                                <h3>LOT 12</h3>
+                                <button class="btn btnCardPurchase">PURCHASE</button>
                                 <div class="square ">
-                                    <img src="/pics/KomatsuPC240LCTrackhoe.jpg" class="squareContent" alt="Komatsu PC240LC Trackhoe">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#lotTwelvePicModal">
+                                        <img src="/pics/KomatsuPC240LCTrackhoe.jpg" class="squareContent" alt="Komatsu PC240LC Trackhoe">
+                                    </span>
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStampOff" alt="soldstamp">
                                 </div>
+                                <p></p>
                                 <h4><strong>Manufacturer:</strong> Komatsu</h4>
                                 <h4><strong>Model:</strong> PC240LC</h4>
                                 <h4><strong>Type:</strong> Excavator</h4>
@@ -276,13 +751,60 @@
                             </div>
                         </div>
                     </div>
+                    <div id="lotTwelvePicModal" class="modal modal-fullscreen-sm-down fade">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col">
+                                                <!-- inserting carousel here -->
+                                                <div id="lotTwelveCarousel" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active" data-bs-interval="3000">
+                                                        <img src="pics/KomatsuPC240LCTrackhoe.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/KomatsuPC240LCTrackhoeBW.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/KomatsuPC240LCTrackhoeUD.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#lotTwelveCarousel" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#lotTwelveCarousel" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                                <!-- inserting carousel here -->
+                                                <!-- <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic"> -->
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btnSiteControl btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h2>Lot 13</h2>
+                                <h3>LOT 13</h3>
+                                <button class="btn btnCardPurchase">PURCHASE</button>
                                 <div class="square ">
-                                    <img src="/pics/KomatsuPC400LCTrackhoe.jpg" class="squareContent" alt="Komatsu PC400LC Trackhoe">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#lotThirteenPicModal">
+                                        <img src="/pics/KomatsuPC400LCTrackhoe.jpg" class="squareContent" alt="Komatsu PC400LC Trackhoe">
+                                    </span>
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStampOff" alt="soldstamp">
                                 </div>
+                                <p></p>
                                 <h4><strong>Manufacturer:</strong> Komatsu</h4>
                                 <h4><strong>Model:</strong> PC400LC</h4>
                                 <h4><strong>Type:</strong> Excavator</h4>
@@ -292,13 +814,60 @@
                             </div>
                         </div>
                     </div>
+                    <div id="lotThirteenPicModal" class="modal modal-fullscreen-sm-down fade">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col">
+                                                <!-- inserting carousel here -->
+                                                <div id="lotThirteenCarousel" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active" data-bs-interval="3000">
+                                                        <img src="pics/KomatsuPC400LCTrackhoe.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/KomatsuPC400LCTrackhoeBW.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/KomatsuPC400LCTrackhoeUD.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#lotThirteenCarousel" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#lotThirteenCarousel" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                                <!-- inserting carousel here -->
+                                                <!-- <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic"> -->
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btnSiteControl btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h2>Lot 14</h2>
+                                <h3>LOT 14</h3>
+                                <button class="btn btnCardPurchase">PURCHASE</button>
                                 <div class="square ">
-                                    <img src="/pics/KomatsuPC88MRTrackhoe.jpg" class="squareContentTall" alt="Komatsu PC88MR Trackhoe">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#lotFourteenPicModal">
+                                        <img src="/pics/KomatsuPC88MRTrackhoe.jpg" class="squareContent" alt="Komatsu PC88MR Trackhoe">
+                                    </span>
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStampOff" alt="soldstamp">
                                 </div>
+                                <p></p>
                                 <h4><strong>Manufacturer:</strong> Komatsu</h4>
                                 <h4><strong>Model:</strong> PC88MR</h4>
                                 <h4><strong>Type:</strong> Mini Excavator</h4>
@@ -308,14 +877,60 @@
                             </div>
                         </div>
                     </div>
+                    <div id="lotFourteenPicModal" class="modal modal-fullscreen-sm-down fade">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col">
+                                                <!-- inserting carousel here -->
+                                                <div id="lotFourteenCarousel" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active" data-bs-interval="3000">
+                                                        <img src="pics/KomatsuPC88MRTrackhoe.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/KomatsuPC88MRTrackhoeBW.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/KomatsuPC88MRTrackhoeUD.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#lotFourteenCarousel" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#lotFourteenCarousel" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                                <!-- inserting carousel here -->
+                                                <!-- <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic"> -->
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btnSiteControl btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h2>Lot 15</h2>
+                                <h3>LOT 15</h3>
+                                <button class="btn btnCardPurchase">PURCHASE</button>
                                 <div class="square ">
-                                    <img src="/pics/MackCementMixer.jpg" class="squareContent" alt="Mack Granite CV713 Cement Mixer">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#lotFifteenPicModal">
+                                        <img src="/pics/MackCementMixer.jpg" class="squareContent" alt="Mack Granite CV713 Cement Mixer">
+                                    </span>
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStampOff" alt="soldstamp">
                                 </div>
-                                <div></div>
+                                <p></p>
                                 <h4><strong>Manufacturer:</strong> Mack</h4>
                                 <h4><strong>Model:</strong> Granite CV713</h4>
                                 <h4><strong>Type:</strong> Cement Mixer</h4>
@@ -326,13 +941,60 @@
                             </div>
                         </div>
                     </div>
+                    <div id="lotFifteenPicModal" class="modal modal-fullscreen-sm-down fade">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col">
+                                                <!-- inserting carousel here -->
+                                                <div id="lotFifteenCarousel" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active" data-bs-interval="3000">
+                                                        <img src="pics/MackCementMixer.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/MackCementMixerBW.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/MackCementMixerUD.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#lotFifteenCarousel" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#lotFifteenCarousel" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                                <!-- inserting carousel here -->
+                                                <!-- <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic"> -->
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btnSiteControl btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h2>Lot 16</h2>
+                                <h3>LOT 16</h3>
+                                <button class="btn btnCardPurchase">PURCHASE</button>
                                 <div class="square ">
-                                    <img src="/pics/MackTwinAxleDumpTruck.jpg" class="squareContent" alt="Mack Granite GU713 Dump Truck">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#lotSixteenPicModal">
+                                        <img src="/pics/MackTwinAxleDumpTruck.jpg" class="squareContent" alt="Mack Granite GU713 Dump Truck">
+                                    </span>
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStampOff" alt="soldstamp">
                                 </div>
+                                <p></p>
                                 <h4><strong>Manufacturer:</strong> Mack</h4>
                                 <h4><strong>Model:</strong> GU713</h4>
                                 <h4><strong>Type:</strong> Dump Truck</h4>
@@ -343,13 +1005,60 @@
                             </div>
                         </div>
                     </div>
+                    <div id="lotSixteenPicModal" class="modal modal-fullscreen-sm-down fade">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col">
+                                                <!-- inserting carousel here -->
+                                                <div id="lotSixteenCarousel" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active" data-bs-interval="3000">
+                                                        <img src="pics/MackTwinAxleDumpTruck.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/MackTwinAxleDumpTruckBW.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/MackTwinAxleDumpTruckUD.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#lotSixteenCarousel" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#lotSixteenCarousel" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                                <!-- inserting carousel here -->
+                                                <!-- <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic"> -->
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btnSiteControl btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h2>Lot 17</h2>
+                                <h3>LOT 17</h3>
+                                <button class="btn btnCardPurchase">PURCHASE</button>
                                 <div class="square ">
-                                    <img src="/pics/MackTwinAxleDumpTruck2.jpg" class="squareContent" alt="Mack RD688S Dump Truck">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#lotSeventeenPicModal">
+                                        <img src="/pics/MackTwinAxleDumpTruck2.jpg" class="squareContent" alt="Mack RD688S Dump Truck">
+                                    </span>
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStampOff" alt="soldstamp">
                                 </div>
+                                <p></p>
                                 <h4><strong>Manufacturer:</strong> Mack</h4>
                                 <h4><strong>Model:</strong> RD688S</h4>
                                 <h4><strong>Type:</strong> Dump Truck</h4>
@@ -360,13 +1069,60 @@
                             </div>
                         </div>
                     </div>
+                    <div id="lotSeventeenPicModal" class="modal modal-fullscreen-sm-down fade">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col">
+                                                <!-- inserting carousel here -->
+                                                <div id="lotSeventeenCarousel" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active" data-bs-interval="3000">
+                                                        <img src="pics/MackTwinAxleDumpTruck2.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/MackTwinAxleDumpTruck2BW.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                      <div class="carousel-item" data-bs-interval="3000">
+                                                        <img src="pics/MackTwinAxleDumpTruck2UD.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                                      </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#lotSeventeenCarousel" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#lotSeventeenCarousel" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                                <!-- inserting carousel here -->
+                                                <!-- <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic"> -->
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btnSiteControl btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h2>Lot 18</h2>
+                                <h3>LOT 18</h3>
+                                <button class="btn btnCardPurchase">PURCHASE</button>
                                 <div class="square ">
-                                    <img src="/pics/VolvoBMFrontEndLoader.jpg" class="squareContent" alt="Volvo LM1640 Loader">
+                                    <span role="button" data-bs-toggle="modal" data-bs-target="#lotEighteenPicModal">
+                                        <img src="/pics/VolvoBMFrontEndLoader.jpg" class="squareContent" alt="Volvo LM1640 Loader">
+                                    </span>
+                                    <img src="/pics/pngkey.com-sold-png-312992.png" class="squareContent soldStampOff" alt="soldstamp">
                                 </div>
+                                <p></p>
                                 <h4><strong>Manufacturer:</strong> Volvo</h4>
                                 <h4><strong>Model:</strong> LM1640</h4>
                                 <h4><strong>Type:</strong> Front End Loader</h4>
@@ -378,21 +1134,65 @@
                     </div>
                 </div>
             </div>
+            <div id="lotEighteenPicModal" class="modal modal-fullscreen-sm-down fade">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col">
+                                        <!-- inserting carousel here -->
+                                        <div id="lotEighteenCarousel" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active" data-bs-interval="3000">
+                                                <img src="pics/VolvoBMFrontEndLoader.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                              </div>
+                                              <div class="carousel-item" data-bs-interval="3000">
+                                                <img src="pics/VolvoBMFrontEndLoaderBW.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                              </div>
+                                              <div class="carousel-item" data-bs-interval="3000">
+                                                <img src="pics/VolvoBMFrontEndLoaderUD.jpg" class="d-block w-100" alt="Bobcat 650 SKid Steer">
+                                              </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#lotEighteenCarousel" data-bs-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#lotEighteenCarousel" data-bs-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Next</span>
+                                            </button>
+                                          </div>
+                                        <!-- inserting carousel here -->
+                                        <!-- <img src="pics/BobcatS650SkidSteer.jpg" alt="Bobcat 650 SKid Steer" class="popupPic"> -->
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btnSiteControl btn-sm ml-auto" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="col-md-3">
                 <div class="sticky-top">
                     <div class="border">
-                        <h3 class="text-center">AUCTION INFO</h3>
-                        <div><strong>BSC Construction Liquidation Auction</strong></div>
-                        <div>February 12, 2022</div>
-                        <div>Bidding opens 09:00 MST</div>
-                        <div>Online Only</div>
-                        <div>Auction ID: 6817-10321</div>
+                        <h3 class="text-center">BIDDER ACCOUNT</h3>
+                        <div>Signed in as: thomas.j.whitney@gmail.com</div>
+                        <div>Paddle Number: 107</div>
+                        <div>Prequalification: YES</div>
+                        <div>Prequalification Amount: $75,000.00</div>
                     </div>
                     <p></p>
                     <div class="border">
-                        <div>Signed in as Username: ThomasWhitney</div>
-                        <div>Prequalification: YES</div>
-                        <div>Prequalification Amount: $75,000.00</div>
+                        <h3 class="text-center">AUCTION INFO</h3>
+                        <div><strong>BSC Construction Liquidation Auction</strong></div>
+                        <div>February 16, 2022</div>
+                        <div>Bidding opens 09:00 MST</div>
+                        <div>Online Only</div>
+                        <div>Auction ID: 6817-10321</div>
                     </div>
                     <p></p>
                     <div class="border">
@@ -402,7 +1202,12 @@
                         <div>Current Bid Increment: $100.00</div>
                         <div>Next Bid: $1,600.00</div>
                         <div>Time Since Last Bid: 00:16</div>
-                        <button class="btn btnBid  text-center">PLACE BID</button>
+                        <button class="btn btnSiteControl text-center">BID</button>
+                    </div>
+                    <div class="border">
+                        <p>Controls</p>
+                        <button class="btn btnSiteControl text-center">Start Auction</button>
+                        <button class="btn btnSiteControl text-center">End Round</button>
                     </div>
                 </div>
             </div>
@@ -428,19 +1233,25 @@
                         $(".squareContent").eq(i).css("top", hPad);
                     }
                     else {
-                        $(".squareContent").eq(i).addClass(".squareContentTall");
-                        $(".squareContent").eq(i).removeClass(".squareContent");
+                        // $(".squareContent").eq(i).addClass(".squareContentTall");
+                        // $(".squareContent").eq(i).removeClass(".squareContent");
+                        $(".squareContent").eq(i).css("width", "unset");
+                        $(".squareContent").eq(i).css("height", "100%");
+                        hPad = hPad + ((sqConHeight - sqConWidth)/2) + "px";
+                        $(".squareContent").eq(i).css("left", hPad);
                     }
                 }   
-                let sqConTallCount = document.getElementsByClassName("squareContentTall").length;
-                for (j=0; j<sqConTallCount; j++) {
-                    sqConTallWidth = $(".squareContentTall").eq(j).width();
-                    sqConTallHeight = $(".squareContentTall").eq(j).height();
-                    wPad = "";
-                    wPad = wPad + ((sqConTallHeight - sqConTallWidth)/2) + "px";
-                    $(".squareContentTall").eq(j).css("left", wPad);
-                }
             };
+
+            // function timerFunction(startTime) {
+            //     let timeChange = Date.now() - startTime;
+                
+            // }
+
+            // function auctionRoundTimer() {
+            //     setInterval(timerFunction,100);
+            // };
+
         </script>
 
     </footer>
