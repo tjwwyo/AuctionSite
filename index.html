@@ -1181,12 +1181,21 @@
                 let imgID = `lot${lotID}Img`;
                 let soldID = `lot${lotID}SoldStamp`;
                 let captionID = `lot${lotID}ImgCaption`;
-                document.getElementById(cardID).removeAttribute("class");
-                document.getElementById(cardID).setAttribute("class", "cardSold h-100");
-                document.getElementById(imgID).setAttribute("class", "squareContent soldImg");
-                document.getElementById(soldID).setAttribute("class", "squareContent soldStampOn");
-                $(`#${captionID}`).css("visibility", "hidden");
-                document.getElementById(imgID).removeEventListener("click", () => launchModal(lotID));
+                if (document.getElementById(cardID).getAttribute("class")=="card h-100") {
+                    document.getElementById(cardID).removeAttribute("class");
+                    document.getElementById(cardID).setAttribute("class", "cardSold h-100");
+                    document.getElementById(imgID).setAttribute("class", "squareContent soldImg");
+                    document.getElementById(soldID).setAttribute("class", "squareContent soldStampOn");
+                    $(`#${captionID}`).css("visibility", "hidden");
+                    document.getElementById(imgID).removeEventListener("click", () => launchModal(lotID));
+                } else if (document.getElementById(cardID).getAttribute("class")=="cardSold h-100") {
+                    document.getElementById(cardID).removeAttribute("class");
+                    document.getElementById(cardID).setAttribute("class", "card h-100");
+                    document.getElementById(imgID).setAttribute("class", "squareContent");
+                    document.getElementById(soldID).setAttribute("class", "squareContent soldStampOff");
+                    $(`#${captionID}`).css("visibility", "visible");
+                    document.getElementById(imgID).addEventListener("click", () => launchModal(lotID));
+                };
             };
 
             document.getElementById("endRoundButton").addEventListener("click", purchaseMode);
@@ -1295,31 +1304,8 @@
             function starterFunction() {
                 squareUp();
                 auctionDateTime();
-                secondTimer();
             }
 
-            function timeChange(invokeTime) {
-                let timeChange=Date.now()-invokeTime;
-                return timeChange;
-            }
-
-            function secondTimer() {
-                let monitorTime=0;
-                var outputTime=0;
-                let initTime=Date.now();
-                while (true) {
-                    monitorTime=setInterval(timeChange(initTime),100);
-                    if (monitorTime>=1000) {
-                        outputTime++;
-                        monitorTime=0;
-                    };
-                };
-                document.querySelector("#bidTimer").textContent=outputTime;
-            }
-
-            function minutizer(outputTime) {
-
-            }
 
         </script>
 
@@ -1337,8 +1323,9 @@
 -button to change based on incremented bid
 -function to end round automatically after passage of time
 -make sidebar into side pop thingy for small screen sizes
--get rid of jQuery?
--figure out how else to optimize -->
+-finalize purchase button
+-figure out how else to optimize 
+-->
 
 
 </html>
